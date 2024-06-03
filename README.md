@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +5,7 @@
     <meta name="description" content="Professional technical migration services for small businesses and enterprises.">
     <meta name="keywords" content="technical migration, data migration, IT services, cloud migration, small business IT support">
     <meta name="author" content="Your Company Name">
-    <title>Technical Migration Solutions | Your Company Name</title>
+    <title>Technical Migration Solutions | Jim Meyer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
