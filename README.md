@@ -63,7 +63,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Your Company Name</h1>
+            <h1>Open Source Solutions</h1>
         </div>
     </header>
 
@@ -77,7 +77,7 @@
         <div class="container">
             <h2>Mission Statement</h2>
             <div class="content">
-                <p>At Your Company Name, we believe in the power of technology to transform businesses and drive innovation. While no-code and low-code solutions offer valuable tools for rapid development and prototyping, we are committed to fostering a deep understanding of application development at the programming coding level. Our mission is to equip our clients and partners with the skills and knowledge necessary to build robust, scalable, and secure applications that meet the highest standards of performance and reliability. By bridging the gap between simplified development tools and comprehensive coding expertise, we empower individuals and organizations to fully realize their technological potential and achieve enduring success.</p>
+                <p>At Open Source Solutions, we believe in the power of technology to transform businesses and drive innovation. While no-code and low-code solutions offer valuable tools for rapid development and prototyping, we are committed to fostering a deep understanding of application development at the programming coding level. Our mission is to equip our clients and partners with the skills and knowledge necessary to build robust, scalable, and secure applications that meet the highest standards of performance and reliability. By bridging the gap between simplified development tools and comprehensive coding expertise, we empower individuals and organizations to fully realize their technological potential and achieve enduring success.</p>
             </div>
         </div>
     </section>
@@ -100,15 +100,15 @@
             <h2>Contact Info</h2>
             <div class="content">
                 <p>If you have any questions or would like to discuss how we can help with your technical migration needs, please contact us:</p>
-                <p>Email: info@yourcompany.com</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Address: 123 Tech Lane, Innovation City, ST 12345</p>
+                <p>Email: starretmeyer@proton.me</p>
+                <p>Phone: (626) 833-0607</p>
+                <p>Area: Las Vegas-Henderson, Nevada </p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Company Name | All rights reserved</p>
+        <p>&copy; 2024 Open Source Solutions, LLC. | All rights reserved</p>
     </footer>
 </body>
 </html>
