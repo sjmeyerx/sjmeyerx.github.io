@@ -12,77 +12,78 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 3rem 1.5rem;
             color: #333;
         }
         
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            text-align: center;
-            padding: 3rem 2rem;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        section {
-            max-width: 1100px;
+        .container {
+            max-width: 900px;
             margin: 0 auto;
-            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
         }
         
-        section:nth-child(even) {
-            background-color: #f8f9fa;
+        .box {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
         }
         
         h2 {
-            color: #2c3e50;
-            font-size: 2rem;
+            color: #667eea;
+            font-size: 2.2rem;
             margin-bottom: 1.5rem;
             text-align: center;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         p {
             font-size: 1.1rem;
             margin-bottom: 1rem;
-            text-align: justify;
+            color: #555;
+            line-height: 1.8;
         }
         
-        .benefits {
+        .highlight-boxes {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
             margin-top: 2rem;
         }
         
-        .benefit-card {
-            background: white;
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
         }
         
-        .benefit-card h3 {
-            color: #2980b9;
+        .highlight h3 {
+            font-size: 1.3rem;
             margin-bottom: 0.5rem;
         }
         
-        .contact-form {
-            max-width: 600px;
-            margin: 2rem auto;
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        .highlight p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 0.95rem;
         }
         
         .form-group {
@@ -93,44 +94,88 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: #333;
+            font-size: 1rem;
         }
         
         input, textarea {
             width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 0.9rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
             font-size: 1rem;
             font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
         }
         
         textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 130px;
         }
         
         button {
-            background: #2980b9;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.1rem 2.5rem;
             border: none;
-            border-radius: 4px;
+            border-radius: 10px;
             font-size: 1.1rem;
+            font-weight: 600;
             cursor: pointer;
             width: 100%;
-            transition: background 0.3s;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
         }
         
         button:hover {
-            background: #21618c;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
         }
         
-        footer {
-            background: #2c3e50;
-            color: white;
+        button:active {
+            transform: translateY(0);
+        }
+        
+        header {
             text-align: center;
-            padding: 2rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.95);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1rem;
+            }
+            
+            .box {
+                padding: 2rem;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -140,42 +185,44 @@
         <p>Affordable, Sustainable Technology for Small Business</p>
     </header>
 
-    <section id="benefits">
-        <h2>Switching to Open Source Solutions</h2>
-        <p>Switching to open-source business solutions and Linux operating systems can transform your small business's bottom line while enhancing security and flexibility. By eliminating expensive licensing fees for proprietary software like Windows and Microsoft Office, you can redirect thousands of dollars annually toward growth initiatives, marketing, or hiring. Open-source alternatives like LibreOffice, Linux distributions, and tools such as Nextcloud or Odoo deliver enterprise-grade functionality without the recurring costs, while giving you complete control over your data and systems.</p>
-        
-        <div class="benefits">
-            <div class="benefit-card">
-                <h3>💰 Cost Savings</h3>
-                <p>Eliminate expensive licensing fees and redirect funds toward business growth.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>🔒 Enhanced Security</h3>
-                <p>Linux systems are renowned for stability, security, and resistance to malware.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>♻️ Hardware Revival</h3>
-                <p>Restore life to outdated machinery made obsolete by Windows 11 requirements.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>🚀 Complete Control</h3>
-                <p>Avoid vendor lock-in and customize software to fit your exact workflow.</p>
+    <div class="container">
+        <div class="box">
+            <h2>Switching to Open Source Solutions</h2>
+            <p>Switching to open-source business solutions and Linux operating systems can transform your small business's bottom line while enhancing security and flexibility. By eliminating expensive licensing fees for proprietary software like Windows and Microsoft Office, you can redirect thousands of dollars annually toward growth initiatives, marketing, or hiring.</p>
+            
+            <p>Open-source alternatives like LibreOffice, Linux distributions, and tools such as Nextcloud or Odoo deliver enterprise-grade functionality without the recurring costs, while giving you complete control over your data and systems. Linux systems are renowned for their stability, security, and resistance to malware—meaning less downtime, fewer IT headaches, and reduced need for costly antivirus subscriptions.</p>
+            
+            <div class="highlight-boxes">
+                <div class="highlight">
+                    <h3>💰 Cost Savings</h3>
+                    <p>Eliminate licensing fees</p>
+                </div>
+                <div class="highlight">
+                    <h3>🔒 Security</h3>
+                    <p>Enhanced protection</p>
+                </div>
+                <div class="highlight">
+                    <h3>♻️ Revive Hardware</h3>
+                    <p>Extend equipment life</p>
+                </div>
+                <div class="highlight">
+                    <h3>🚀 Independence</h3>
+                    <p>No vendor lock-in</p>
+                </div>
             </div>
         </div>
-    </section>
 
-    <section id="mission">
-        <h2>Our Mission</h2>
-        <p>We empower small businesses to break free from costly technology constraints by delivering accessible, sustainable open-source solutions that maximize existing resources and minimize expenses. Through hands-on migration services, hardware revitalization, comprehensive training, and AI-enhanced internal support development, we transform outdated equipment into productive assets and convert recurring software costs into long-term savings.</p>
-        
-        <p>Our commitment is to provide personalized, on-site expertise that not only transitions businesses to Linux and open-source platforms, but equips their teams with the knowledge and tools to maintain technological independence. We believe every small business deserves enterprise-level capability without enterprise-level costs, and we're dedicated to proving that sustainable, secure, and cost-effective technology isn't just possible—it's practical.</p>
-        
-        <p>By breathing new life into existing hardware, eliminating vendor lock-in, and fostering internal technical competency, we help our clients redirect their resources from IT overhead to business growth, creating a foundation for resilient, future-proof operations.</p>
-    </section>
+        <div class="box">
+            <h2>Our Mission</h2>
+            <p>We empower small businesses to break free from costly technology constraints by delivering accessible, sustainable open-source solutions that maximize existing resources and minimize expenses. Through hands-on migration services, hardware revitalization, comprehensive training, and AI-enhanced internal support development, we transform outdated equipment into productive assets and convert recurring software costs into long-term savings.</p>
+            
+            <p>Our commitment is to provide personalized, on-site expertise that not only transitions businesses to Linux and open-source platforms, but equips their teams with the knowledge and tools to maintain technological independence. We believe every small business deserves enterprise-level capability without enterprise-level costs, and we're dedicated to proving that sustainable, secure, and cost-effective technology isn't just possible—it's practical.</p>
+            
+            <p>By breathing new life into existing hardware, eliminating vendor lock-in, and fostering internal technical competency, we help our clients redirect their resources from IT overhead to business growth, creating a foundation for resilient, future-proof operations.</p>
+        </div>
 
-    <section id="contact">
-        <h2>Get Started Today</h2>
-        <div class="contact-form">
+        <div class="box">
+            <h2>Get Started Today</h2>
             <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Name *</label>
@@ -200,11 +247,7 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Open Source Business Solutions. All rights reserved.</p>
-    </footer>
+    </div>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
