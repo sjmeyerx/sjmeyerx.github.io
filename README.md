@@ -110,8 +110,8 @@
       upgrading your current systems, we're here to help.
     </p>
     <div class="contact-info">
-      <p><span class="highlight">Email:</span> yourname@example.com</p>
-      <p><span class="highlight">Phone:</span> (555) 555-5555</p>
+      <p><span class="highlight">Email:</span> sjmeyerx</p>
+      <p><span class="highlight">GitHub:</span> <a href="https://github.com/sjmeyerx">github.com/sjmeyerx</a></p>
       <p><span class="highlight">Location:</span> Chandler, Arizona</p>
     </div>
     <p>
